@@ -50,7 +50,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 		
 		Log.d(TAG, "\tNotification Data: " + data.toString());
         FCMPlugin.sendPushPayload( data );
-        //sendNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody(), remoteMessage.getData());
+        sendNotification("TAJTL", "DA LI JE OVO SAMO KAD JE UBIJENA ILI SAMO KAD NEMA MESSAGE ILI ŠTA KOJ KURAC", remoteMessage.getData());
     }
     // [END receive_message]
 
